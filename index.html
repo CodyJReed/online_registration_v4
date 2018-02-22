@@ -22,17 +22,32 @@
     <form class="main-form" action="index.html" method="post">
         <fieldset class="section_1">
           <legend>Contact Information</legend>
+      <div class="row">
         <label for="name">Full Name</label><br>
-        <input type="text" id="name" name="user_name" placeholder="Required "required><br>
+        <input type="text" id="name" name="user_name" placeholder="Required " required><br>
+      </div>
+
+      <div class="row">
         <label for="email">Email Address</label><br>
-        <input type="email" id="email"name="user_email" placeholder="Required "required><br>
+        <input type="email" id="email" name="user_email" placeholder="Required " required><br>
+      </div>
+
+      <div class="row">
         <label for="phone_number">Phone Number</label><br>
-        <input type="phone" id="phone_number"name="user_phone_number"><br>
+        <input type="text" id="phone_number" name="user_phone_number"><br>
+      </div>
+
+      <div class="row">
         <label for="street_address">Street Address</label><br>
-        <input type=text id="street_address"name="user_street_address"><br>
+        <input type="text" id="street_address" name="user_street_address"><br>
+      </div>
+
+      <div class="row">
         <label for="city">City</label><br>
-        <input type="text"id="city"name="user_city"><br>
-        <div class="selectdiv">
+        <input type="text" id="city" name="user_city"><br>
+      </div>
+
+        <div class="selectdiv row">
           <label for="state">State</label><br>
           <select id="state" name="user_state">
             <option disabled selected="selected">Choose State</option>
@@ -88,22 +103,26 @@
             <option value="WY">WY</option>
           </select><br>
         </div>
+
+      <div class="row">
         <label for="zip_code">Zip Code</label><br>
-        <input type="text" id="zip_code"name="user_zip_code"class="zip"><br>
+        <input type="text" id="zip_code" name="user_zip_code" class="zip"><br>
+      </div>
+
       </fieldset>
       <fieldset class="section_2">
         <legend>Newsletter</legend>
-        <label for="news_select">Select the newletter(s) you would like to receive</label><br>
-        <input type="checkbox"id="news_select"name="newsletter"value="html_news"/>HTML News<br>
-        <input type="checkbox"id="news_select"name="newsletter"value="css_news"/>CSS News<br>
-        <input type="checkbox"id="news_select"name="newsletter"value="javascript_news"/>Javascript News<br>
+        <label for="html_select">Select the newletter(s) you would like to receive</label><br>
+        <input type="checkbox" id="html_select" name="newsletter" value="html_news"/>HTML News<br>
+        <input type="checkbox" id="css_select" name="newsletter" value="css_news"/>CSS News<br>
+        <input type="checkbox" id="java_select" name="newsletter" value="javascript_news"/>Javascript News<br>
 
-        <label for="news_format">Newsletter format</label><br>
-        <input type="radio"id="news_format"name="format"value="html"/>HTML<br>
-        <input type="radio"id="news_format"name="format"value="plain_text"/>Plain text<br>
+        <label for="html_format">Newsletter format</label><br>
+        <input type="radio" id="html_format" name="format" value="html"/>HTML<br>
+        <input type="radio" id="text_format" name="format" value="plain_text"/>Plain text<br>
 
         <label for="other_topics">Other topics you'd like to hear about</label><br>
-        <textarea id="other_topics"name="comments"></textarea><br>
+        <textarea id="other_topics" name="comments"></textarea><br>
 
         <button type="submit">Sign Up</button>
       </fieldset>
