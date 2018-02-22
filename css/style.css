@@ -1,0 +1,146 @@
+/* Style & Design  */
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Merriweather', serif;
+}
+h1 {
+  flex-flow: row;
+  background-color: #040827;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 1.5em 0;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: .75em;
+}
+p {
+  margin: 0;
+  padding-bottom: 2em;
+  color: grey;
+  font-size: .85em;
+}
+.main-header,
+.main-footer {
+  text-align: center;
+}
+.header-div {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 4px solid;
+}
+.form-div {
+  width: 90%;
+  margin: 0 auto;
+}
+.main-form {
+  margin-top: 3px;
+  padding-top: 1.5em;
+  border-top: 2px solid;
+}
+label {
+  color: grey;
+  font-size: .85em;
+}
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  font-size: 85%;
+  line-height: 3;
+  background-color: lightgrey;
+  padding: .5em 1em;
+  margin: .75em 0;
+  border-radius: .2rem;
+  border-style: none;
+  outline: none;
+}
+input::placeholder {
+  font-style: italic;
+  text-align: right;
+}
+input:focus,
+textarea:focus {
+  border:  3px solid;
+  border-color: navy;
+  background-color: lightblue;
+  transition: ease-in-out 1s;
+}
+.section_1,
+.section_2 {
+  padding: 0;
+  margin: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.section_1 {
+  border-bottom: 2px solid;
+}
+.section_2 {
+  border-bottom: none;
+  margin-top: 22.79px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  width: 10%;
+}
+input[value*="html"] {
+  margin-top: 1.5em;
+}
+input[value*="javascript_news"],
+input[value*="plain_text"] {
+  margin-bottom: 2em;
+}
+legend {
+  padding-bottom: 1.2em;
+  font-size: 1.25em;
+}
+select {
+  -webkit-appearance: none;
+  color: grey;
+}
+.zip {
+  width: 50%;
+  margin-bottom: 10%;
+}
+textarea {
+  margin-top: 1.25em;
+  padding-bottom: 1em;
+}
+button {
+  background-color: darkcyan;
+  font-size: 1.25em;
+  color: white;
+}
+.main-footer {
+  font-style: italic;
+  padding-top: 1em;
+  margin-bottom: 10em;
+}
+
+
+
+/*-----Create UP/DOWN Arrow-----*/
+.selectdiv {
+  position: relative;
+}
+.selectdiv:after {
+  content: '<>';
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  position: absolute;
+  pointer-events: none;
+  right: 1%;
+  top: 50%;
+}
