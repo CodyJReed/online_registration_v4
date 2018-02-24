@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 body {
-
-  /* display: flex;
-  flex-direction: column; */
-  width: 100%;
   font-family: 'Merriweather', serif;
 }
 h1 {
@@ -25,7 +21,7 @@ h2 {
 }
 p {
   margin: 0;
-  padding-bottom: 2em;
+  /* padding-bottom: 2em; */
   color: grey;
   font-size: .85em;
 }
@@ -37,6 +33,7 @@ p {
   max-width: 529px;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 2em;
   border-bottom: 4px solid;
 }
 .form-div {
@@ -91,6 +88,7 @@ textarea:focus {
   padding-bottom: 10%;
 }
 .section_2 {
+  background-color: whitesmoke;
   border-bottom: none;
   margin-top: 8%;
 }
@@ -150,9 +148,6 @@ button {
 /*-----Media Queries-----*/
 
 @media(min-width: 768px) {
-  body {
-    max-width: 1024px;
-  }
   .row {
     display:flex;
     justify-content: space-between;
@@ -160,7 +155,7 @@ button {
   }
   input[type="text"],
   input[type="email"],
-  input[type="telephone"],
+  input[type="tel"],
   select {
     flex: 3;
   }

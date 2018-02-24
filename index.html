@@ -34,7 +34,7 @@
 
       <div class="row">
         <label for="phone_number">Phone Number</label><br>
-        <input type="text" id="phone_number" name="user_phone_number"><br>
+        <input type="tel" id="phone_number" name="user_phone_number"><br>
       </div>
 
       <div class="row">
@@ -112,17 +112,29 @@
       </fieldset>
       <fieldset class="section_2">
         <legend>Newsletter</legend>
-        <label for="html_select">Select the newletter(s) you would like to receive</label><br>
-        <input type="checkbox" id="html_select" name="newsletter" value="html_news"/>HTML News<br>
-        <input type="checkbox" id="css_select" name="newsletter" value="css_news"/>CSS News<br>
-        <input type="checkbox" id="java_select" name="newsletter" value="javascript_news"/>Javascript News<br>
 
-        <label for="html_format">Newsletter format</label><br>
-        <input type="radio" id="html_format" name="format" value="html"/>HTML<br>
-        <input type="radio" id="text_format" name="format" value="plain_text"/>Plain text<br>
+        <p>Select the newletter(s) you would like to receive</p>
 
-        <label for="other_topics">Other topics you'd like to hear about</label><br>
-        <textarea id="other_topics" name="comments"></textarea><br>
+        <input type="checkbox" id="html_select" name="newsletter" value="html_news"/>
+        <label for="html_select">HTML News</label><br>
+
+        <input type="checkbox" id="css_select" name="newsletter" value="css_news"/>
+        <label for="css_select">CSS News</label><br>
+
+        <input type="checkbox" id="java_select" name="newsletter" value="javascript_news"/>
+        <label for="java_select">Javascript News</label><br>
+
+        <p>Newsletter format</p>
+
+
+        <input type="radio" id="html_format" name="format" value="html"/>
+        <label for="html_format">HTML</label><br>
+
+        <input type="radio" id="text_format" name="format" value="plain_text"/>
+        <label for="text_format">Plain text</label><br>
+
+        <label for="other_topics">Other topics you'd like to hear about</label>
+        <textarea id="other_topics" name="comments" placeholder="Submit Feedback Here..."></textarea><br>
 
         <button type="submit">Sign Up</button>
       </fieldset>
